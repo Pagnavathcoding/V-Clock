@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  background: #f6f9fc;
+  color: #02203c;
+}
+
+body h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body main header {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 1em;
+}
+
+body main header .logo {
+  width: 160px;
+  height: 45px;
+  background: #02203c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+body main header .logo h1 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+body main header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main header .menu ul li {
+  padding: 0 0 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main header .menu ul li a {
+  background: #ffffff;
+  height: 45px;
+  width: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #02203c;
+  font-size: 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+body main header .menu ul li .active {
+  background: #15314b;
+  color: #ffffff;
+  border-top: 0.2em solid #626ee3;
+}
+
+body main .worldClock {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .worldClock #worldclock-title {
+  font-size: 30px;
+}
+
+body main .worldClock h1 {
+  font-size: 100px;
+  padding: 1em 0;
+}
+
+body main .worldClock p {
+  font-size: 20px;
+}
+
+body main .stopWatch {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .stopWatch #stop-watch-title {
+  font-size: 30px;
+}
+
+body main .stopWatch h1 {
+  font-size: 100px;
+  padding: 1em 0;
+}
+
+body main .stopWatch p {
+  font-size: 20px;
+}
+
+body main .stopWatch .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .stopWatch .btn button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0 1em;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+body main .stopWatch .btn button:active {
+  border: 0.1em solid #02203c;
+}
+
+body main .stopWatch .btn button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+body main .stopWatch .btn button:nth-child(1) {
+  background: #626ee3;
+}
+
+body main .stopWatch .btn button:nth-child(2) {
+  background: #d13434;
+}
+
+body main .timer {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .timer #timer-title {
+  font-size: 30px;
+}
+
+body main .timer h1 {
+  font-size: 100px;
+  padding: 0.5em 0;
+}
+
+body main .timer .minute {
+  padding: 3em 0;
+}
+
+body main .timer .minute p {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 0.5em;
+}
+
+body main .timer .minute input {
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 0.5em;
+  font-size: 20px;
+  color: #02203c;
+  border-radius: 5px;
+}
+
+body main .timer .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .timer .btn button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0 1em;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+body main .timer .btn button:active {
+  border: 0.1em solid #02203c;
+}
+
+body main .timer .btn button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+body main .timer .btn button:nth-child(1) {
+  background: #626ee3;
+}
+
+body main .timer .btn button:nth-child(2) {
+  background: #d13434;
+}
+
+body main .timer .alert {
+  width: 100%;
+  height: 100vh;
+  background: #02203c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .timer .alert h1 {
+  font-size: 40px;
+}
+
+body main .timer .alert button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  background: #626ee3;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+body main .timer .alert button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+@media (max-width: 680px) {
+  body {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
